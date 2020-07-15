@@ -1,0 +1,128 @@
+/* 
+
+1. Home left
+    1.1 Name and email
+    1.2 Navigation bar
+
+2. Home right
+
+3. Container Box
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Baloo Da 2', cursive;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+}
+
+/* 1. Home Left */
+.home-left {
+    width: 43%;
+    background: #2F303A;
+    display: flex;
+}
+
+/* 1.1 Name and email */
+.main-name, .main-email {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.main-name {
+    font-size: 3.8em;
+}
+.main-email {
+    font-size: 1.4em;
+}
+
+/* 1.2 Navigation bar */
+.navbar {
+    align-self: center;
+    margin-left: 9.68%;
+}
+.navbar-nav {
+    margin-top: 40px;
+    list-style: none;
+    box-sizing: border-box;
+    font-size: 2em;
+}
+.navbar-nav li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+.navbar-nav li a:hover {
+    color: #000000;
+}
+
+/* 2. Home Right */
+.home-right {
+    width: 57%;
+    background: #B6B6AC;
+}
+
+
+/* 3. Container Box */
+.container-boxs {
+    position: absolute;
+    width: 57%;
+    height: 70vh;
+    right: 4.17vw;
+    top: 15vh;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 0.3fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "box1 box2"
+        "box3 box4"
+        "box5 box5"
+        ;
+    grid-gap: 1.2em;
+}
+
+.box {
+    background-color: #FFFFFF;
+    background-image: url("Images/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+
+.box:hover {
+    box-shadow: 4px 4px 2px 2px #616060;
+}
+
+.box-skills {
+    grid-area: box1;
+}
+.box-projects {
+    grid-area: box2;
+}
+.box-certificates {
+    grid-area: box3;
+}
+.box-education {
+    grid-area: box4;
+}
+.box-about {
+    box-shadow: 4px 4px 2px 2px #616060;
+    background-image: none;
+    background-color: #716E6E;
+    color: #FFFFFF;
+    grid-area: box5;
+}
