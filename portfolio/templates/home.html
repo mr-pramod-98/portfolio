@@ -1,42 +1,31 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link href="{% static 'content/css/home.css' %}" rel="stylesheet">
-</head>
-<body>
-    <div class="home-left">
-        <nav class="navbar">
-            <samp class="main-name">Pramod J</samp>
-            <samp class="main-email">pramod.athreya.0098@gmail.com</samp>
-            <ul class="navbar-nav">
-                <li class="nav-item"><a href="#">Skills</a></li>
-                <li class="nav-item"><a href="#">Projects</a></li>
-                <li class="nav-item"><a href="#">Certifications</a></li> 
-                <li class="nav-item"><a href="#">Education</a></li>
-                <li class="nav-item"><a href="#">About</a></li>
-            </ul>
-        </nav>
+{% extends 'base.html' %}
 
-        <div class="left-circle-large"></div>
-        <div class="left-circle-small"></div>
+{% block nav-bar %}
+<ul class="navbar-nav">
+    <li class="nav-item"><a href="/skills/">Skills</a></li>
+    <li class="nav-item"><a href="/projects/">Projects</a></li>
+    <li class="nav-item"><a href="/certifications/">Certifications</a></li>
+    <li class="nav-item"><a href="/education/">Education</a></li>
+    <li class="nav-item"><a href="/about/">About</a></li>
+</ul>
+{% endblock %}
 
+{% block content %}
+<div class="container-boxs">
+    <div class="box box-skills">
+        <a class="box-nav-item" href="skills.html">Skills</a>
     </div>
-    
-    <div class="home-right">
-        <div class="right-circle-large"></div>
-        <div class="right-circle-small"></div>
+    <div class="box box-projects">
+        <a class="box-nav-item" href="projects.html">Projects</a>
     </div>
-    
-    <div class="container-boxs">
-        <div class="box box-skills">Skills</div>
-        <div class="box box-projects">Projects</div>
-        <div class="box box-certificates">Certificates</div>
-        <div class="box box-education">Education</div>
-        <div class="box box-about">About</div>
+    <div class="box box-certificates">
+        <a class="box-nav-item" href="certifications.html">Certifications</a>
     </div>
-</body>
-</html>
+    <div class="box box-education">
+        <a class="box-nav-item" href="education.html">Education</a>
+    </div>
+    <div class="box box-about">
+        <a class="box-nav-item" href="about.html">About</a>
+    </div>
+</div>
+{% endblock %}

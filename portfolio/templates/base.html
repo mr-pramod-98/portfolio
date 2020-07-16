@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="{% static 'content/css/home.css' %}" rel="stylesheet">
+    {% block links %} {% endblock %}
+</head>
+<body>
+    <div class="home-left">
+        <nav class="navbar">
+            <samp class="main-name">Pramod J</samp>
+            <samp class="main-email">pramod.athreya.0098@gmail.com</samp>
+            {% block nav-bar %} {% endblock %}
+        </nav>
+
+        <div class="left-circle-large"></div>
+        <div class="left-circle-small"></div>
+
+    </div>
+
+    <div class="home-right">
+        <div class="right-circle-large"></div>
+        <div class="right-circle-small"></div>
+
+        {% block content %} {% endblock %}
+    </div>
+
+
+</body>
+</html>

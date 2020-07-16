@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block links %}
+<link href="{% static 'content/css/education.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block nav-bar %}
+<ul class="navbar-nav">
+    <li class="nav-item"><a href="/skills/">Skills</a></li>
+    <li class="nav-item"><a href="/projects/">Projects</a></li>
+    <li class="nav-item"><a href="/certifications/">Certifications</a></li>
+    <li class="nav-item"><a href="/education/">Education</a></li>
+    <li class="nav-item"><a href="/about/">About</a></li>
+</ul>
+{% endblock %}
+
+{% block content %}
+<div class="content-main">
+            <div class="education-set">
+                <div class="institution-name">Prarthana School</div>
+                <div class="education-details">
+                    <samp class="category">SSLC</samp></br>
+                    <samp class="passing-year">Year: 2015</samp></br>
+                    <samp class="score">Percentage: 80.16</samp>
+                </div>
+            </div>
+            <div class="education-set">
+                <div class="institution-name">Vijaya Pre-University College</div>
+                <div class="education-details">
+                    <div class="category">II PUC</div>
+                    <div class="passing-year">Year: 2017</div>
+                    <div class="score">Percentage: 83</div>
+                </div>
+            </div>
+            <div class="education-set">
+                <div class="institution-name">Dayananda Sagar Acedamy Of Technoloy and Management</div>
+                <div class="education-details">
+                    <div class="category">Bachelor Of Engineering</div>
+                    <div class="passing-year">Year: 2021</div>
+                    <div class="score">CGPA: 8.89</div>
+                </div>
+            </div>
+        </div>
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block links %}
+<link href="{% static 'content/css/certifications.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block nav-bar %}
+<ul class="navbar-nav">
+    <li class="nav-item"><a href="/skills/">Skills</a></li>
+    <li class="nav-item"><a href="/projects/">Projects</a></li>
+    <li class="nav-item"><a href="/certifications/">Certifications</a></li>
+    <li class="nav-item"><a href="/education/">Education</a></li>
+    <li class="nav-item"><a href="/about/">About</a></li>
+</ul>
+{% endblock %}
+
+{% block content %}
+<div class="content-main">
+    <div class="certificate-set">
+        <div class="title">Python</div>
+        <div class="certification-details">
+            <samp class="description">12 week course</samp></br>
+            <samp class="provider">Provided By: NPTEL</samp></br>
+            <samp class="score">Score: 86%</samp>
+        </div>
+    </div>
+    <div class="certificate-set">
+        <div class="title">Database Management System</div>
+        <div class="certification-details">
+            <samp class="description">8 week course</samp></br>
+            <samp class="provider">Provided By: NPTEL</samp></br>
+            <samp class="score">Score: 75%</samp>
+        </div>
+    </div>
+    <div class="certificate-set">
+        <div class="title">Java</div>
+        <div class="certification-details">
+            <samp class="description">3 days workshop on Java</samp></br>
+            <samp class="provider">Provided By: Ethnus</samp></br>
+        </div>
+    </div>
+    <div class="certificate-set">
+        <div class="title">BlockChain</div>
+        <div class="certification-details">
+            <samp class="description">4 week workshop on BlockChain</samp></br>
+            <samp class="provider">Provided By: TrakInvest</samp></br>
+        </div>
+    </div>
+</div>
+{% endblock %}

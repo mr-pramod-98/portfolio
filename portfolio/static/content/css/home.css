@@ -40,10 +40,10 @@ body {
     color: #FFFFFF;
 }
 .main-name {
-    font-size: 3.8em;
+    font-size: 4.3vw;
 }
 .main-email {
-    font-size: 1.4em;
+    font-size: 1.9vw;
 }
 
 /* 1.2 Navigation bar */
@@ -55,7 +55,7 @@ body {
     margin-top: 40px;
     list-style: none;
     box-sizing: border-box;
-    font-size: 2em;
+    font-size: 2.4vw;
 }
 .navbar-nav li a {
     text-decoration: none;
@@ -70,7 +70,7 @@ body {
 .left-circle-large, .left-circle-small {
     position: absolute;
     border-radius: 50%;
-    border: solid 15.4vh rgba(246, 232, 231, 0.4);
+    border: solid 7.8vw rgba(246, 232, 231, 0.4);
 }
 .left-circle-large {
     width: 24vw;
@@ -123,7 +123,7 @@ body {
     display: grid;
     grid-template-rows: 1fr 1fr 0.3fr;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
         "box1 box2"
         "box3 box4"
         "box5 box5"
@@ -160,4 +160,9 @@ body {
 }
 .box-about {
     grid-area: box5;
+}
+
+.box-nav-item {
+    text-decoration: none;
+    color: #FFFFFF;
 }
