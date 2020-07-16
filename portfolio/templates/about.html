@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block links %}
+<link href="{% static 'content/css/about.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block nav-bar %}
+<ul class="navbar-nav">
+    <li class="nav-item"><a href="/skills/">Skills</a></li>
+    <li class="nav-item"><a href="/projects/">Projects</a></li>
+    <li class="nav-item"><a href="/certifications/">Certifications</a></li>
+    <li class="nav-item"><a href="/education/">Education</a></li>
+    <li class="nav-item"><a href="/about/">About</a></li>
+</ul>
+{% endblock %}
+
+{% block content %}
+<div class="content-main">
+    <div class="head">
+        <samp class="head-name">Pramod J</samp><br>
+        <samp class="head-email">pramod.athreya.0098@gmail.com</samp>
+    </div>
+    <div class="description">
+        Database Management System 8 week course Provided By: NPTEL Score: 75%
+    </div>
+    <div class="priorities">
+        <samp>Android Developer</samp><br>
+        <samp>Backend Developer</samp>
+    </div>
+    <div class="hackerrank">
+        <samp>Hackerrank Rank in C: <samp class="text-imp">1</samp></samp><br>
+        <samp>Hackerrank Rank in Java: <samp class="text-imp">1</samp></samp><br>
+        <samp>Hackerrank Rank in Python: <samp class="text-imp">1</samp></samp>
+    </div>
+    <div class="personal-info">
+        <samp>Nationality: <samp class="text-imp">Indian</samp></samp><br>
+        <samp>Languages Known: Englih, Kannada, Hindi</samp><br>
+        <samp>Location: AGS Layout, Uttarahalli, Bangalore-61</samp>
+    </div>
+    <div class="social-links">
+        <div class="link-item"><a href="https://github.com/mr-pramod-98" target="_blank">GitHub</a></div>
+        <div class="link-item"><a href="https://www.linkedin.com/in/pramod-j-a039aa175/" target="_blank">LinkedIn</a>
+        </div>
+        <div class="link-item"><a href="https://www.hackerrank.com/pramod_athreya_1" target="_blank">HackerRank</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

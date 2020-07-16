@@ -1,0 +1,64 @@
+.content-main {
+    position: relative;
+    z-index: 1;
+    overflow-y: auto;
+    width: 100%;
+    height: 100vh;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.head {
+    margin-top: 3vw;
+    padding: 1.2vw;
+    line-height: 200%;
+}
+
+.head-name {
+    font-size: 4.3vw;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.head-email {
+    font-size: 1.9vw;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.description, .priorities, .hackerrank, .personal-info, .social-links {
+    padding: 1.2vw;
+    font-size: 2vw;
+    color: #878383;
+    line-height: 100%
+}
+
+.description {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.right-circle-large {
+    z-index: 0;
+}
+
+.social-links {
+    display: flex;
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(17, 103, 177, 0.4);
+    border-radius: 5px;
+    margin-right: 1.2vw;
+    width: 12vw;
+    height: 4vw;
+}
+
+.link-item a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.link-item:hover {
+    box-shadow: 2px 2px 4px #a5a1a1;
+}
