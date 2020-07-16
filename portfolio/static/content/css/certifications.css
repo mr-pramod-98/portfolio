@@ -1,0 +1,31 @@
+.content-main {
+    position: relative;
+    z-index: 1;
+    overflow-y: auto;
+    width: 100%;
+    height: 100vh;
+}
+
+.certificate-set {
+    background-color: rgba(17, 103, 177, 0.4);
+    border-radius: 5px;
+    padding: 1.2vw;
+    margin: 1.2vw;
+}
+
+.title {
+    font-size: 3vw;
+    color: rgba(54, 52, 52, 0.8);
+    line-height: 100%
+}
+
+.certification-details {
+    margin-top: 2%;
+    font-size: 2vw;
+    color: #878383;
+    line-height: 100%
+}
+
+.right-circle-large {
+    z-index: 0;
+}
