@@ -1,0 +1,7 @@
+.skill-group a {
+    text-decoration: none;
+}
+
+.skill-group a:hover {
+    box-shadow: 4px 4px 2px #a5a1a1;
+}

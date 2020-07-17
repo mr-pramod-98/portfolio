@@ -19,6 +19,10 @@
     color: rgba(0, 0, 0, 0.6);
 }
 
+.selected {
+    color: #000000;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -52,11 +56,12 @@ body {
 
 /* 1.2 Navigation bar */
 .navbar {
-    align-self: center;
+    margin-top: 16.4vh;
     margin-left: 9.68%;
+    z-index: 1;
 }
 .navbar-nav {
-    margin-top: 40px;
+    margin-top: 6.4vh;
     list-style: none;
     box-sizing: border-box;
     font-size: 2.4vw;
@@ -75,6 +80,7 @@ body {
     position: absolute;
     border-radius: 50%;
     border: solid 7.8vw rgba(246, 232, 231, 0.4);
+    z-index: 0;
 }
 .left-circle-large {
     width: 24vw;
