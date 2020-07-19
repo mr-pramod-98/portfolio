@@ -17,45 +17,21 @@
 
 {% block content %}
 <div class="content-main">
+
+    {% for certificate in certificates %}
     <div class="certificate-set">
-        <div class="title">Python</div>
+        <div class="title">{{ certificate.title }}</div>
         <div class="certification-details">
-            <samp class="description">12 week course</samp></br>
+            <samp class="description">{{ certificate.duration }}</samp><br>
             <samp class="provider">
-                Provided By: <samp class="text-imp">NPTEL</samp>
-            </samp></br>
-            <samp class="score">Score: <samp class="text-imp">86%</samp></samp>
+                Provided By: <samp class="text-imp">{{ certificate.provider }}</samp>
+            </samp><br>
+            {% if certificate.score %}
+            <samp class="score">Score: <samp class="text-imp">{{ certificate.score }}%</samp></samp>
+            {% endif %}
         </div>
     </div>
-    <div class="certificate-set">
-        <div class="title">Database Management System</div>
-        <div class="certification-details">
-            <samp class="description">8 week course</samp></br>
-            <samp class="provider">
-                Provided By: <samp class="text-imp">NPTEL</samp>
-            </samp></br>
-            <samp class="score">
-                Score: <samp class="text-imp">75%</samp>
-            </samp>
-        </div>
-    </div>
-    <div class="certificate-set">
-        <div class="title">Java</div>
-        <div class="certification-details">
-            <samp class="description">3 days workshop on Java</samp></br>
-            <samp class="provider">
-                Provided By: <samp class="text-imp">Ethnus</samp>
-            </samp></br>
-        </div>
-    </div>
-    <div class="certificate-set">
-        <div class="title">BlockChain</div>
-        <div class="certification-details">
-            <samp class="description">4 week workshop on BlockChain</samp></br>
-            <samp class="provider">
-                Provided By: <samp class="text-imp">TrakInvest</samp>
-            </samp></br>
-        </div>
-    </div>
+    {% endfor %}
+
 </div>
 {% endblock %}

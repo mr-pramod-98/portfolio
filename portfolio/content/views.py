@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Certifications
 
 
 # Create your views here.
@@ -11,7 +12,8 @@ def skills(request):
 
 
 def certifications(request):
-    return render(request, 'certifications.html')
+    certificates = Certifications.objects.all()
+    return render(request, 'certifications.html', {'certificates': certificates})
 
 
 def education(request):
