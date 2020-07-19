@@ -13,6 +13,7 @@
 .skill-category {
     font-size: 3vw;
     color: rgba(54, 52, 52, 0.8);
+    line-height: 200%;
 }
 
 .skill-item {
@@ -25,6 +26,7 @@
     padding: 0.2em;
     font-size: 2vw;
     color: #FFFFFF;
+    line-height: 140%;
 }
 
 .skill-group {
@@ -39,4 +41,28 @@
 
 .right-circle-large {
     z-index: 0;
+}
+
+
+@media only screen and (max-width: 460px) {
+
+    .skill-category {
+        font-size: 6vw;
+    }
+
+    .skill-item {
+        padding: 0.2em;
+        font-size: 4vw;
+    }
+
+    .content-main {
+        position: static;
+        width: auto;
+        height: auto;
+        padding: 6.52vw;
+
+        display: flex;
+        flex-direction: column;
+    }
+
 }

@@ -28,7 +28,7 @@
     padding: 1.2vw;
     font-size: 2vw;
     color: #878383;
-    line-height: 100%
+    line-height: 140%
 }
 
 .description {
@@ -61,4 +61,42 @@
 }
 .link-item:hover {
     box-shadow: 2px 2px 4px #a5a1a1;
+}
+
+
+@media only screen and (max-width: 460px) {
+
+    .head {
+        line-height: 140%;
+    }
+
+    .head-name {
+        font-size: 6vw;
+    }
+
+    .head-email {
+        font-size: 4vw;
+    }
+
+    .description, .priorities, .hackerrank, .personal-info, .social-links {
+        padding: 1em;
+        padding-left: 0;
+        font-size: 4vw;
+    }
+
+    .link-item {
+        width: 22vw;
+        height: 8vw;
+    }
+
+    .content-main {
+        position: static;
+        width: auto;
+        height: auto;
+        padding: 6.52vw;
+
+        display: flex;
+        flex-direction: column;
+    }
+
 }

@@ -13,7 +13,7 @@
 
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 .text-imp {
     color: rgba(0, 0, 0, 0.6);
@@ -26,12 +26,16 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: 'Baloo Da 2', cursive;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 body {
     height: 100vh;
     display: flex;
+}
+
+.nav-mob {
+    display: none;
 }
 
 
@@ -131,7 +135,7 @@ body {
     top: 15vh;
 
     display: grid;
-    grid-template-rows: 1fr 1fr 0.3fr;
+    grid-template-rows: 1fr 1fr 0.6fr;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
         "box1 box2"
@@ -175,4 +179,70 @@ body {
 .box-nav-item {
     text-decoration: none;
     color: #FFFFFF;
+}
+
+
+@media only screen and (max-width: 460px) {
+
+    body {
+        background-color: #D0EFFF;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-left, .right-circle-large, .right-circle-small {
+        display: none;
+    }
+
+    .home-right {
+        width: 100%;
+        height: 100%;
+        background-color: #FFFFFF;
+        background-image: url(../Images/background-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        border-top-left-radius: 5.43vw;
+        border-top-right-radius: 5.43vw;
+        overflow-y: auto;
+    }
+
+    .nav-mob {
+        display: inline-flex;
+        align-items: center;
+        width: 86.96%;
+        height: 6.69vh;
+        padding-top: 2.23vw;
+        padding-bottom: 2.23vw;
+        padding-left: 6.52vw;
+        padding-right: 6.52vw;
+    }
+
+    .nav-mob-title {
+        color: #E87FB1;
+        font-size: 8vw;
+    }
+
+    .menu-mob {
+        height: 8vw;
+        width: 8vw;
+        margin-left: auto;
+        order: 2;
+    }
+
+    .container-boxs {
+        position: static;
+        width: auto;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+        padding: 6.52vw;
+    }
+
+    .box {
+        font-size: 6vw;
+        height: 10vh;
+    }
 }

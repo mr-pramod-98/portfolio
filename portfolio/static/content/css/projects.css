@@ -1,7 +1,37 @@
 .skill-group a {
     text-decoration: none;
+    transition: 0.3s;
 }
 
 .skill-group a:hover {
     box-shadow: 4px 4px 2px #a5a1a1;
+}
+
+
+@media only screen and (max-width: 460px) {
+
+    .skill-group {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-category {
+        font-size: 6vw;
+        line-height: 200%;
+    }
+
+    .skill-item {
+        padding: 1em;
+        font-size: 4vw;
+    }
+
+    .content-main {
+        position: static;
+        width: auto;
+        height: auto;
+        padding: 6.52vw;
+
+        display: flex;
+        flex-direction: column;
+    }
+
 }

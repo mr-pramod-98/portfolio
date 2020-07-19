@@ -16,16 +16,45 @@
 .title {
     font-size: 3vw;
     color: #FFFFFF;
-    line-height: 100%
+    line-height: 120%
 }
 
 .certification-details {
     margin-top: 2%;
     font-size: 2vw;
     color: #878383;
-    line-height: 100%
+    line-height: 140%
 }
 
 .right-circle-large {
     z-index: 0;
+}
+
+
+@media only screen and (max-width: 460px) {
+
+    .title {
+        font-size: 6vw;
+    }
+
+    .certification-details {
+        font-size: 4vw;
+    }
+
+    .certificate-set {
+        padding: 1.2em;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .content-main {
+        position: static;
+        width: auto;
+        height: auto;
+        padding: 6.52vw;
+
+        display: flex;
+        flex-direction: column;
+    }
+
 }
