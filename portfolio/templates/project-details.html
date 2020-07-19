@@ -18,30 +18,29 @@
 {% block content %}
 <div class="content-main">
     <div class="project-details">
-        <div class="title"><samp class="text-imp">Title: </samp>Cooking Guide</div>
-        <div class="duration"><samp class="text-imp">Duration: </samp>18 days</div>
+        <div class="title"><samp class="text-imp">Title: </samp>{{ details.title }}</div>
+        {% if details.duration %}
+        <div class="duration"><samp class="text-imp">Duration: </samp>{{ details.duration }}</div>
+        {% endif %}
+        {% if is_group_project %}
+        <div class="duration"><samp class="text-imp">Team Size: </samp>{{ details.team_size }}</div>
+        <div class="duration"><samp class="text-imp">Role: </samp>{{ details.role }}</div>
+        {% endif %}
         <div class="tools-used">
             <samp class="text-imp">Tools used: </samp>
-            <p class="details">
-                Python, Django
-                framework, HTML5,
-                Web-scraping using
-                Scrapy, CSS3.</p>
+            <p class="details">{{ details.tools_used }}</p>
         </div>
         <div class="description">
             <samp class="text-imp">Description: </samp>
-            <p class="details">
-                The objective of this application is to
-                provide the users with the best recipes
-                available on the internet. This is done by
-                scraping data from the best websites
-                available and presenting it to the users. The
-                users can create their individual accounts
-                and can save the recipes they like.</p>
+            <p class="details">{{ details.description }}</p>
         </div>
         <div class="code-link">
             <samp class="text-imp">Code: </samp>
-            <a href="https://github.com/mr-pramod-98" target="_blank">GitHub link</a>
+            <a href="{{ details.link }}" target="_blank">GitHub link
+                {% if details.is_private %}
+                <samp> (Private Repository) </samp>
+                {% endif %}
+            </a>
         </div>
     </div>
 </div>

@@ -8,5 +8,5 @@ urlpatterns = [
     path('education/', views.education, name="education"),
     path('about/', views.about, name="about"),
     path('projects/', views.projects, name="projects"),
-    path('project-entry/', views.project_entry, name="projects-entry")
+    path('projects/<str:category>/<str:title>/', views.project_details, name="project-details")
 ]

@@ -21,26 +21,21 @@
     <div class="skill-set">
         <div class="skill-category">Personal Projects</div>
         <div class="skill-group">
-            <a href="/project-entry/">
-                <div class="skill-item">Airdroid</div>
+            {% for personal_project in personal_projects %}
+            <a href="personal-projects/{{ personal_project.0 }}/">
+                <div class="skill-item">{{ personal_project.0 }}</div>
             </a>
-            <a href="/project-entry/">
-                <div class="skill-item">Cooking Guide</div>
-            </a>
-            <a href="/project-entry/">
-                <div class="skill-item">Blood Donor</div>
-            </a>
+            {% endfor %}
         </div>
     </div>
     <div class="skill-set">
         <div class="skill-category">Group Projects</div>
         <div class="skill-group">
-            <a href="/project-entry/">
-                <div class="skill-item">Travel Buddy</div>
+            {% for group_project in group_projects %}
+            <a href="group-projects/{{ group_project.0 }}/">
+                <div class="skill-item">{{ group_project.0 }}</div>
             </a>
-            <a href="/project-entry/">
-                <div class="skill-item">Book Exchange</div>
-            </a>
+            {% endfor %}
         </div>
     </div>
 </div>
