@@ -34,10 +34,6 @@ body {
     display: flex;
 }
 
-.nav-mob {
-    display: none;
-}
-
 
 /* 1. Home Left */
 .home-left {
@@ -185,7 +181,7 @@ body {
 @media only screen and (max-width: 460px) {
 
     body {
-        background-color: #D0EFFF;
+        background-color: #5b78c7;
         display: flex;
         flex-direction: column;
     }

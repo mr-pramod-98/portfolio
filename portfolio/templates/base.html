@@ -6,16 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link href="{% static 'content/css/home.css' %}" rel="stylesheet">
+    <link href="{% static 'content/css/navigation.css' %}" rel="stylesheet">
     {% block links %} {% endblock %}
 </head>
 <body>
     <!-- Navigation for moble -->
-    <div class="nav-mob">
-        <div class="nav-mob-title">Pramod J</div>
-        <div class="menu-mob">
-            <img  src="{% static 'content/Images/mune-mobile.svg' %}" width="100%">
+    <nav class="nav-mobile">
+        <div class="nav-title">Pramod J</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
-    </div>
+        <ul class="nav-links">
+            <li><a href="/skills/">Skills</a></li>
+            <li><a href="/projects/">Projects</a></li>
+            <li><a href="/certifications/">Certifications</a></li>
+            <li><a href="/education/">Education</a></li>
+            <li><a href="/about/">About</a></li>
+        </ul>
+    </nav>
 
     <div class="home-left">
         <nav class="navbar">
@@ -36,6 +46,6 @@
         {% block content %} {% endblock %}
     </div>
 
-
+    <script src="{% static 'content/js/app.js' %}"></script>
 </body>
 </html>
