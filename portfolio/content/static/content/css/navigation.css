@@ -53,7 +53,7 @@ body {
   color: #ae5fce;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 460px) {
   .line {
     width: 8.69vw;
     height: 1.3vw;

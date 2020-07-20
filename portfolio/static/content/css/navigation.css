@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
-
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +7,15 @@
 }
 body {
   font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-title {
+    position: absolute;
+    font-size: 8vw;
+    color: #FFFFFF;
+    left: 10%;
+    top: 50%;
+    transform: translate(-10%, -50%);
 }
 
 .nav-mobile {
@@ -29,7 +37,7 @@ body {
 .nav-links li a {
   color: white;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 6vw;
 }
 
 .landing {
@@ -45,10 +53,10 @@ body {
   color: #ae5fce;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 460px) {
   .line {
-    width: 30px;
-    height: 3px;
+    width: 8.69vw;
+    height: 1.3vw;
     background-color: white;
     margin: 5px;
   }
