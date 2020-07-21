@@ -43,7 +43,7 @@ body {
 }
 
 /* 1.1 Name and email */
-.main-name, .main-email {
+.main-name, .main-name a, .main-email {
     text-decoration: none;
     color: #FFFFFF;
 }

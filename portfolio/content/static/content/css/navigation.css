@@ -12,10 +12,14 @@ body {
 .nav-title {
     position: absolute;
     font-size: 8vw;
-    color: #FFFFFF;
     left: 10%;
     top: 50%;
     transform: translate(-10%, -50%);
+}
+
+.nav-title a {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .nav-mobile {
